@@ -1,11 +1,11 @@
-package me.nutowen;
+package net.sagapvp.cities;
+
+import java.io.File;
+import java.util.Set;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-
-import java.io.File;
-import java.util.Set;
 
 public class SettingsManager {
 	

@@ -1,4 +1,4 @@
-package me.nutowen;
+package net.sagapvp.cities;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.ConfigurationSection;

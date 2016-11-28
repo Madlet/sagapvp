@@ -45,8 +45,10 @@ public class Boss implements Listener {
 	@EventHandler
 	public void onPlayerSpawnBoss(PlayerInteractEvent e) {
 		if(e.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
-			if(e.getPlayer().getItemInHand().equals(megaBoss) && e.getPlayer().getItemInHand().getItemMeta().equals(megaBoss.getItemMeta())) {
-				
+			Bukkit.getServer().broadcastMessage("tesy");
+			if(e.getPlayer().getItemInHand().getType().equals(Material.MONSTER_EGG)) {
+				e.getPlayer().sendMessage("test");
+				CustomEntityZombie.spawn(e.getClickedBlock().getLocation());
 			}
 		}
 	}
